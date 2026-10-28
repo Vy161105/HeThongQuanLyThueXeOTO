@@ -53,7 +53,7 @@ if (!function_exists('activeNav')) {
         <div class="nav-items" id="nav-items">
             <a class="<?= trim(activeNav('index.php')) ?>" href="index.php">TRANG CHỦ</a>
             <a href="index.php#gioi-thieu">GIỚI THIỆU</a>
-            <a href="index.php#xe">DANH MỤC XE</a>
+            <a href="index.php?page=mau-xe">DANH MỤC XE</a>
             <a href="index.php#quy-trinh">QUY TRÌNH THUÊ XE</a>
             <a href="index.php#lien-he">LIÊN HỆ</a>
         </div>

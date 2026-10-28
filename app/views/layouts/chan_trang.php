@@ -9,7 +9,7 @@
         <div>
             <h3>Liên kết</h3>
             <a href="index.php">Trang chủ</a>
-            <a href="index.php#xe">Danh mục xe</a>
+            <a href="index.php?page=mau-xe">Danh mục xe</a>
             <a href="index.php#quy-trinh">Quy trình thuê xe</a>
         </div>
 

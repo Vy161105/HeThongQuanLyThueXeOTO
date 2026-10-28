@@ -79,4 +79,22 @@ class mKhachHang
 
         return $ketQua;
     }
+
+    public function LayTheoMa($maKH)
+    {
+        $sql = "SELECT MaKH, HoVaTen, DienThoai, GiayPhepLaiXe
+                FROM KHACH_HANG
+                WHERE MaKH = ?";
+
+        $stmt = mysqli_prepare($this->con, $sql);
+        mysqli_stmt_bind_param($stmt, "s", $maKH);
+        mysqli_stmt_execute($stmt);
+
+        $ketQua = mysqli_stmt_get_result($stmt);
+        $khachHang = mysqli_fetch_assoc($ketQua);
+
+        mysqli_stmt_close($stmt);
+
+        return $khachHang ?: null;
+    }
 }
